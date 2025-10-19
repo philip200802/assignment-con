@@ -18,7 +18,12 @@ body {
   padding: 40px 10px;
   gap: 30px;
 }
-
+#Statements{
+  font-size: 2.5rem;
+  color: white; 
+  font-weight: bold;
+  font-family: Arial; 
+}
 div {
   background: var(--card);
   border-radius: 15px;
@@ -102,6 +107,12 @@ div:nth-child(11) {
     display: grid;
     grid-template-columns: 1fr;
     gap: 25px;
+  }
+  #statements{
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    font-family: Arial;
   }
 
   div {
