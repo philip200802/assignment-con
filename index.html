@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <h2>1. Delivery Company (Lowercase)</h2>
+        <input type="text"  id="firstTest" placeholder="Enter Address">
+        <button onclick="textVerify()">verify</button>
+        <p id="show"></p>
+    </div>
+
+    <div>
+        <h2>2. School in Ado-Ekiti (Remove extra spaces)</h2>
+        <input type="text"  id="secondTest" placeholder="Enter text with spaces">
+        <button onclick="secondTextVerify()">verify</button>
+        <p id="showTwo"></p>
+    </div>
+
+    <div>
+        <h2>3. Grocery Store (Even/Odd items discount)</h2>
+        <input type="Number"  id="thirdTest" placeholder="Enter number of Items">
+        <button onclick="thirdTextVerify()">verify</button>
+        <p id="showThree"></p>
+    </div>
+
+     <div>
+        <h2>4. Weather Station (Temperature Category)</h2>
+        <input type="number"  id="fourthTest" placeholder="Enter Temperature in ℃">
+        <button onclick="fourthTextVerify()">verify</button>
+        <p id="showFour"></p>
+    </div>
+
+     <div>
+        <h2>5. SQI Clinic (BMI Calculation)</h2>
+        <input type="number"  id="num1" placeholder="weight (kg)">
+        <input type="number" name="" id="num2" placeholder="height (m)">
+        <button onclick="BMIVerify()">verify</button>
+        <p id="showFive"></p>
+    </div>
+
+
+    <div>
+        <h2>6. Gaming Company (Username Validation)</h2>
+        <input type="text"  id="seventhTest"  placeholder="Letters, numbers, and underscores only">
+        <button onclick="seventhTextVerify()">verify</button>
+        <p id="showSeven"></p>
+    </div>
+
+    <div>
+        <h2>7. Airline (Luggage Weight)</h2>
+        <input type="number"  id="eightTest" placeholder="luggage weight (kg)">
+        <button onclick="eightTextVerify()">verify</button>
+        <p id="showEight"></p>
+    </div>
+
+     <div>
+        <h2>8. OAU (Email Validation - @oauife.edu.ng)</h2>
+        <input type="text"  id="ninthTest" placeholder="Enter your Domain">
+        <button onclick="ninthTextVerify()">verify</button>
+        <p id="showNinth"></p>
+    </div>
+
+     <div>
+        <h2>9. Secondary School (Grading System)</h2>
+        <input type="number"  id="tenthTest" placeholder="Input total score (0-100)">
+        <button onclick="tenthTextVerify()">verify</button>
+        <p id="showTenth"></p>
+    </div>
+
+    
+     <div>
+        <h2>10. Supermarket (Price Discount)</h2>
+        <input type="number"  id="eleventhTest" placeholder="Input total price (₦)">
+        <button onclick="eleventhTextVerify()">verify</button>
+        <p id="showEleven"></p>
+    </div>
+
+    <div>
+  <h2>11. University in Katangua(JAMB Cut-off)</h2>
+  <input type="number" placeholder="Enter JAMB score" id="score">
+  <input type="text" placeholder="Enter the course" id="course">
+  <button onclick="twelveTextVerify()">Verify</button>
+  <p id="showTwelve"></p>
+</div>
+
+
+    <div>
+  <h2>12. INEC (Voting Eligibility)</h2>
+  <input type="number" placeholder="Enter your birth year (e.g., 2007)" id="birth">
+  <button onclick="thirteenthTextVerify()">Verify</button>
+  <p id="showThirteen"></p>
+
+</div>
+</body>
+<script src="script.js">
+
+</script>
+</html>

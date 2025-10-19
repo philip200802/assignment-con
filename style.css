@@ -1,0 +1,118 @@
+:root {
+  --background-gradient: linear-gradient(135deg, #d9c8ff, #f5e6ff);
+  --accent-color: #6a0dad;
+  --text-color: #333333;
+  --shadow-color: rgba(0, 0, 0, 0.15);
+  --card: #f9f3ff;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: var(--background-gradient);
+  color: var(--text-color);
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  padding: 40px 10px;
+  gap: 30px;
+}
+
+div {
+  background: var(--card);
+  border-radius: 15px;
+  box-shadow: 0 5px 20px var(--shadow-color);
+  width: 30vw;
+  min-height: 22vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  transition: all 0.6s ease;
+}
+
+div:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(106, 13, 173, 0.3);
+}
+div:nth-child(2n) {
+  background: var(--card);
+}
+div:nth-child(3n) {
+  background: var(--card);
+}
+div:nth-child(4n) {
+  background: var(--card);
+}
+div:nth-child(5n) {
+  background: var(--card);
+}
+
+input {
+  background-color: #faf6ff;
+  height: 40px;
+  width: 80%;
+  border: 1px solid #d3b9ff;
+  border-radius: 8px;
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 0 12px;
+  box-shadow: 0 0 5px rgba(106, 13, 173, 0.15);
+}
+
+input:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 10px rgba(106, 13, 173, 0.4);
+  outline: none;
+}
+button {
+  background: var(--accent-color);
+  height: 40px;
+  width: 30%;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: #580c;
+  box-shadow: 0 4px 15px #580c;
+}
+
+div:nth-child(5),
+div:nth-child(11) {
+  min-height: 30vh;
+}
+
+@media (max-width: 1024px) {
+  div {
+    width: 45vw;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  div {
+    width: 78vw;
+  }
+
+  input {
+    width: 80%;
+  }
+
+  button {
+    width: 40%;
+  }
+}
