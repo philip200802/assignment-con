@@ -108,8 +108,8 @@ div:nth-child(11) {
     grid-template-columns: 1fr;
     gap: 25px;
   }
-  #statements{
-    font-size: 2rem;
+  #Statements{
+    font-size: 1.6rem;
     color: white;
     font-weight: bold;
     font-family: Arial;
