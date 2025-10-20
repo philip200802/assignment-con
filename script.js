@@ -146,6 +146,10 @@ let mode = /^[A-Za-z0-9._%+-]+@oauife\.edu\.ng$/i;
   else if(answer >= 0 && answer<=39) {
     showTenth.innerHTML = "F = Fail" 
   }
+  else if (answer >100){
+    showTenth.innerHTML = "Invalid Score"
+    alert("Invalid Score")
+  }
 }
 }
 
