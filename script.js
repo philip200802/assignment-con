@@ -1,20 +1,24 @@
 const textVerify = () => {
   let Insert = firstTest.value.trim()
   if (Insert === "") {
-     alert("Input valid Text");
+     show.innerHTML = ("Input valid Text");
+     show.style.color = "red";
   } else {
     const value = Insert.toLowerCase();
     show.innerHTML = value;
+    show.style.color = "black";
   }
 }
 
 const secondTextVerify = () => {
   let insert = secondTest.value.trim();
   if (insert === ""){
-    alert("Input valid Text");
+    showTwo.innerHTML = ("Input valid Text");
+    showTwo.style.color = "red";
   }else{
    const answer = insert.replace(/\s+/g, " ").trim();
     showTwo.innerHTML = answer;
+    showTwo.style.color = "black";
   }
 }
 const thirdTextVerify = () => {
